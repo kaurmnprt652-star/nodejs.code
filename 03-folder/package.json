@@ -1,0 +1,23 @@
+{
+  "name": "03-folder",
+  "version": "1.0.0",
+  "description": "This is the best package ever built by someone",
+  "keywords": [
+    "awesom"
+  ],
+  "license": "ISC",
+  "author": "preet",
+  "type": "commonjs",
+  "main": "npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "browserify": "^17.0.1",
+    "express": "^5.2.1",
+    "slugify": "^1.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Form</title>
+        </head>
+        <body>
+            <form action="/action_page.php" method="get">
+                <fieldset>
+                    <legend>personalia:</legend>
+                <lable for="fname">First Name</lable><br>
+                <input type="text" id="fname" name="fname"><br>
+                <lable for="lname">Last Name</lable><br>
+                <input type="lname" id="lname" name="lname"><br>
+                <lable for="rname">Roll No.</lable><br>
+                <input type="text" id="rname" name="rname"><br>
+                <p>Choose your Branch</p>
+                <input type="Radio" id="cse" name="Your_Branch" value="CSE">
+                <lable for="cse">CSE</lable><br>
+                <input type="Radio" id="it" name="Your_Branch" value="IT">
+                <lable for="it">IT</lable><br>
+                <input type="Radio" id="mech" name="Your_Branch" value="Mech">
+                <lable for="mech">Mech</lable><br>
+                <input type="Radio" id="ece" name="Your_Branch" value="ECE">
+                <lable for="ece">ECE</lable><br>
+                <lable for="sem">Choose a sem</lable><br>
+                <select id="sem" name="sem">
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                </select>
+                <br>
+                <br>
+                <lable for="cname">College Name</lable><br>
+                <input type="text" id="cname" name="cname"><br>
+                <p>Choose your favourite course</p>
+                <input type="checkbox" id="c" name="fav_language" value="C">
+                <lable for="c">C</lable><br>
+                <input type="checkbox" id="c++" name="fav_language" value="C++">
+                <lable for="c++">C++</lable><br>
+                <input type="checkbox" id="java" name="fav_language" value="JAVA">
+                <lable for="java">JAVA</lable><br>
+                <input type="checkbox" id="python" name="fav_language" value="PYTHON">
+                <lable for="python">PYTHON</lable><br>
+                <input type="checkbox" id="javascript" name="fav_language" value="JAVASCRIPT">
+                <lable for="javascript">JAVASCRIPT</lable><br>
+                <p>Write about your favourite courses.</p>
+                <textarea name="message" id=" message" rows="20" cols="30"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+                </fieldset>
+            </form>
+        </body>
+        </html>

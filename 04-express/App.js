@@ -1,37 +1,36 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const app = express();
 const port = 80;
-
-// for serving static files
-
-app.use('/static',express.static('static'))
+//EPRESS SPECIFIC STUFF
+app.use('/static',express.static('static'))// for serving static files
+app.use(express.urlencoded())// for parsing application/x-www-form-urlencoded
 
 // set the template engine as pug
-app.set('view engine', 'pug');
+app.set('view engine', 'pug');  
 
 // set the views directory
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views')); 
 
-// Our pug demo endpoint
-app.get("/demo", (req, res) => {
-    res.status(200).render('demo', { title: 'Hey Preet', message: 'Hello there and welcome to my first express app with pug template engine' });
+// ENDPOINTS
+app.get('/', (req, res)=>{
+    const con="This is the best content on the internet so far so use it wisely";
+    const params={'title':'pubg is the best game', 'content':con};
+    res.status(200).render('index.pug', params);
 });
 
-app.get("/", (req, res) => {
-    res.status(200).send("This is my first homepage express app");
-});
-app.get("/about", (req, res) => {
-    res.send("This is my about pagr express app");
-});
+app.post('/', (req, res)=>{
+    name = req.body.name
+    age = req.body.age
+    gender = req.body.gender
+    address = req.body.address
+    more = req.body.more
+    let outputToWrite = `The name of the client is ${name}, ${age} years old, ${gender}, residing at ${address}. More about him/her: ${more}`
+    fs.writeFileSync('output.txt', outputToWrite, 'utf-8');
 
-
-app.post("/about", (req, res) => {
-    res.send("This is a post request about page of my first express app");
-});
-
-app.get("/this", (req, res) => {
-    res.status(404).send("This page is not found on my website preet");
+    const params = {'title': 'pubg is the best game'};
+    res.status(200).render('index.pug', params);
 });
 
 

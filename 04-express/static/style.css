@@ -7,12 +7,12 @@
 body::before{
     opacity:0.5;
     content:"";
-    width:"100";
+    width:"800";
     height:100;
     z-index:-1;
     top:0px;
     position:absolute;
-    
+    background:url("blurred-modern-gym-interior-with-warm-bokeh-lights-and-fitness-equipment-free-photo (1).jpg");
 
 }
 nav{
@@ -25,7 +25,7 @@ ul{
 }
 li{
     list-style: none;
-    padding: 3px 17py;
+    padding: 3px 12px;
 }
 a{
     text-decoration: none;
@@ -33,19 +33,19 @@ a{
     font-weight: bold;
    
 }
-h1{
+h2{
     text-align: center;
     color:black;
 }
 .container{
-    margin:12px auto;
+    margin:35px 0px;
     
    
 }
-.input,textarea{
+input,textarea{
     display:block;
     padding:3px;
-    margin:15px;
+    margin:15px auto;
     width:60%;
     outline:none;
     border:2px solid black;
@@ -53,14 +53,15 @@ h1{
 
 }
 .btn{
-    margin:4px;
+    margin:4px auto;
     display:block;
     padding: 5px 12px;
     background-color: grey;
     color:white;
     font-weight:bold;
-    font-size: 18px;
+    font-size: 15px;
     border:2px solid black;
-    border-radius:11px;
+    border-radius:9px;
     cursor:pointer;
+    outline:none;
 }

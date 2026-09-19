@@ -7,8 +7,8 @@ function average(arr){
     return sum/arr.length;
 }
 
-module.export = {
+module.exports = {
     avg:average,
-    name:"preet",
+    name:"Manpreet",
     repo:"Github"
 }

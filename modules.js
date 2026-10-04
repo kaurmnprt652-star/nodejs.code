@@ -6,4 +6,4 @@ console.log("The content of the file is:");
 console.log(text);
 
 console.log("creating a new file...")
-fs.writeFileSync('johan.txt', text );
+fs.writeFileSync('Rohan.txt', text );

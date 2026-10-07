@@ -9,6 +9,6 @@ function average(arr){
 
 module.exports = {
     avg:average,
-    name:"Mannu",
+    name:"Manpreet",
     repo:"Github"
 }
